@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--水平垂直居中-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="水平垂直居中" id="vXZ-lx-hvc" customClass="ViewController" customModule="AutoLayoutAndSwiftXcode6" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,101 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jP0-qS-H5g">
+                                <rect key="frame" x="16" y="285" width="568" height="30"/>
+                                <color key="backgroundColor" red="0.78409476899999997" green="0.78409476899999997" blue="0.78409476899999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="swfit水平垂直居中">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jP0-qS-H5g" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="C9u-ig-QCN"/>
+                            <constraint firstAttribute="centerX" secondItem="jP0-qS-H5g" secondAttribute="centerX" id="cJW-iz-klX"/>
+                            <constraint firstItem="jP0-qS-H5g" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="hju-bx-t22"/>
+                            <constraint firstItem="jP0-qS-H5g" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="owz-6Q-1m7"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--水平居中-->
+        <scene sceneID="KEU-zs-PDg">
+            <objects>
+                <viewController title="水平居中" id="gFq-WQ-TAp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ehy-jT-Y55"/>
+                        <viewControllerLayoutGuide type="bottom" id="RbD-1f-IYO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2jd-yH-GW1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfr-8c-42i">
+                                <rect key="frame" x="225" y="139" width="131" height="30"/>
+                                <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="88P-Qm-R0B"/>
+                                    <constraint firstAttribute="height" constant="30" id="OGV-Of-9F8"/>
+                                </constraints>
+                                <state key="normal" title="swift水平居中">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vfr-8c-42i" firstAttribute="top" secondItem="ehy-jT-Y55" secondAttribute="bottom" constant="119" id="M0O-r0-74N"/>
+                            <constraint firstAttribute="centerX" secondItem="vfr-8c-42i" secondAttribute="centerX" constant="9.5" id="cyk-RC-zHJ"/>
+                            <constraint firstItem="vfr-8c-42i" firstAttribute="centerX" secondItem="2jd-yH-GW1" secondAttribute="centerX" id="mfl-0r-nTC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mfl-0r-nTC"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bah-DV-cCa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="455" y="1113"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="luX-1Z-nj5">
+            <objects>
+                <viewController id="xH2-X2-zdz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NXa-x0-fjO"/>
+                        <viewControllerLayoutGuide type="bottom" id="4bE-Gs-QTw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tQM-ZV-obJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HeP-1b-5VR">
+                                <rect key="frame" x="240" y="285" width="131" height="30"/>
+                                <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="zwL-Di-kir"/>
+                                </constraints>
+                                <state key="normal" title="swift垂直居中">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HeP-1b-5VR" firstAttribute="leading" secondItem="tQM-ZV-obJ" secondAttribute="leadingMargin" constant="224" id="5Bg-f4-UL9"/>
+                            <constraint firstAttribute="centerY" secondItem="HeP-1b-5VR" secondAttribute="centerY" id="fEw-Gf-Ttw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="beW-ex-hkA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="1809"/>
         </scene>
     </scenes>
 </document>
