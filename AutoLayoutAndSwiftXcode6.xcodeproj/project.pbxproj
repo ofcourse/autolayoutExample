@@ -13,6 +13,10 @@
 		88DC9B631B7EE2290041D8A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88DC9B621B7EE2290041D8A6 /* Images.xcassets */; };
 		88DC9B661B7EE2290041D8A6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88DC9B641B7EE2290041D8A6 /* LaunchScreen.xib */; };
 		88DC9B721B7EE2290041D8A6 /* AutoLayoutAndSwiftXcode6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC9B711B7EE2290041D8A6 /* AutoLayoutAndSwiftXcode6Tests.swift */; };
+		88DC9B7D1B7F256B0041D8A6 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC9B7B1B7F256B0041D8A6 /* FirstTableViewCell.swift */; };
+		88DC9B7E1B7F256B0041D8A6 /* FirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88DC9B7C1B7F256B0041D8A6 /* FirstTableViewCell.xib */; };
+		88DC9B801B7F263A0041D8A6 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DC9B7F1B7F263A0041D8A6 /* FirstTableViewController.swift */; };
+		88DC9B821B7F2C8B0041D8A6 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 88DC9B811B7F2C8B0041D8A6 /* arrow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		88DC9B6B1B7EE2290041D8A6 /* AutoLayoutAndSwiftXcode6Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayoutAndSwiftXcode6Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DC9B701B7EE2290041D8A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88DC9B711B7EE2290041D8A6 /* AutoLayoutAndSwiftXcode6Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutAndSwiftXcode6Tests.swift; sourceTree = "<group>"; };
+		88DC9B7B1B7F256B0041D8A6 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
+		88DC9B7C1B7F256B0041D8A6 /* FirstTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
+		88DC9B7F1B7F263A0041D8A6 /* FirstTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
+		88DC9B811B7F2C8B0041D8A6 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +86,15 @@
 			isa = PBXGroup;
 			children = (
 				88DC9B5B1B7EE2290041D8A6 /* AppDelegate.swift */,
+				88DC9B811B7F2C8B0041D8A6 /* arrow.png */,
 				88DC9B5D1B7EE2290041D8A6 /* ViewController.swift */,
 				88DC9B5F1B7EE2290041D8A6 /* Main.storyboard */,
 				88DC9B621B7EE2290041D8A6 /* Images.xcassets */,
 				88DC9B641B7EE2290041D8A6 /* LaunchScreen.xib */,
 				88DC9B591B7EE2290041D8A6 /* Supporting Files */,
+				88DC9B7B1B7F256B0041D8A6 /* FirstTableViewCell.swift */,
+				88DC9B7C1B7F256B0041D8A6 /* FirstTableViewCell.xib */,
+				88DC9B7F1B7F263A0041D8A6 /* FirstTableViewController.swift */,
 			);
 			path = AutoLayoutAndSwiftXcode6;
 			sourceTree = "<group>";
@@ -194,6 +206,8 @@
 			files = (
 				88DC9B611B7EE2290041D8A6 /* Main.storyboard in Resources */,
 				88DC9B661B7EE2290041D8A6 /* LaunchScreen.xib in Resources */,
+				88DC9B7E1B7F256B0041D8A6 /* FirstTableViewCell.xib in Resources */,
+				88DC9B821B7F2C8B0041D8A6 /* arrow.png in Resources */,
 				88DC9B631B7EE2290041D8A6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +226,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88DC9B801B7F263A0041D8A6 /* FirstTableViewController.swift in Sources */,
+				88DC9B7D1B7F256B0041D8A6 /* FirstTableViewCell.swift in Sources */,
 				88DC9B5E1B7EE2290041D8A6 /* ViewController.swift in Sources */,
 				88DC9B5C1B7EE2290041D8A6 /* AppDelegate.swift in Sources */,
 			);
