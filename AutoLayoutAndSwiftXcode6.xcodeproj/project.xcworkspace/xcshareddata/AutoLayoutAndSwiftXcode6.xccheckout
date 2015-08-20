@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>BF1002F7-7541-4945-BFE2-182AC5DDABB0</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>AutoLayoutAndSwiftXcode6</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>7C1E93BD8E8830A6B1388C261CA247D151B78318</key>
 		<string>https://github.com/ofcourse/autolayoutExample.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>AutoLayoutAndSwiftXcode6.xcodeproj/project.xcworkspace</string>
+	<string>AutoLayoutAndSwiftXcode6.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>7C1E93BD8E8830A6B1388C261CA247D151B78318</key>

@@ -48,9 +48,21 @@
                                     <constraint firstAttribute="height" constant="80" id="1yl-lu-KR9"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Woj-Ox-BWo">
+                                <rect key="frame" x="21" y="118" width="563" height="111"/>
+                                <color key="backgroundColor" red="1" green="0.95686274510000002" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="Ajf-0W-9kJ"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xgK-Xg-vD9" appends="YES" id="8wY-gM-m0p"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Woj-Ox-BWo" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="0mw-dY-Rg8"/>
                             <constraint firstItem="xEo-th-SBX" firstAttribute="leading" secondItem="MLj-Bq-Q3v" secondAttribute="trailing" constant="31" id="16T-7z-ZFm"/>
                             <constraint firstItem="MLj-Bq-Q3v" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="3Qp-9a-hAR"/>
                             <constraint firstItem="AGl-lK-oma" firstAttribute="leading" secondItem="xEo-th-SBX" secondAttribute="trailing" constant="37" id="7g3-Y7-NHR"/>
@@ -59,15 +71,27 @@
                             <constraint firstAttribute="trailingMargin" secondItem="AGl-lK-oma" secondAttribute="trailing" constant="6" id="JNJ-d4-Gjd"/>
                             <constraint firstItem="MLj-Bq-Q3v" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="TqX-E1-Bjf"/>
                             <constraint firstItem="MLj-Bq-Q3v" firstAttribute="width" secondItem="xEo-th-SBX" secondAttribute="width" constant="8" id="aG9-wa-wdT"/>
+                            <constraint firstItem="Woj-Ox-BWo" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="98" id="bTW-If-WBG"/>
                             <constraint firstItem="AGl-lK-oma" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="bea-Vy-Who"/>
                             <constraint firstAttribute="centerX" secondItem="jP0-qS-H5g" secondAttribute="centerX" id="cJW-iz-klX"/>
                             <constraint firstItem="jP0-qS-H5g" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="hju-bx-t22"/>
                             <constraint firstItem="xEo-th-SBX" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="o2E-ER-JCi"/>
                             <constraint firstItem="jP0-qS-H5g" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="owz-6Q-1m7"/>
+                            <constraint firstItem="Woj-Ox-BWo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="wRh-2k-f7F"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="middleView" destination="Woj-Ox-BWo" id="xqX-Fc-w0S"/>
+                        <outlet property="middleViewTopSpaceLayout" destination="bTW-If-WBG" id="itH-uw-fh9"/>
+                        <outlet property="panGesture" destination="xgK-Xg-vD9" id="mZw-8C-mdx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="xgK-Xg-vD9">
+                    <connections>
+                        <action selector="pan:" destination="vXZ-lx-hvc" id="nLi-8N-OAP"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="455" y="357"/>
         </scene>
